@@ -1,0 +1,171 @@
+header{
+    .top-header{
+        padding: $space15 0;
+        .contact-info{
+            ul{
+                color: $white;
+                @include mobile-device{
+                    text-align: center;
+                }
+                li{
+                    font-size: $font-size-base;
+                    font-weight: $font-weight-medium;
+                    line-height: $line-height-basic;
+                    color: $white;
+                    display: inline-block;
+                    padding: 0px $space10;
+
+                    
+
+                    @include tablet-device{
+                        font-size: $font-size-xs +1;
+                    }
+                    @include mobile-device{
+                         font-size: $font-size-xs;
+                         padding: 0px 10px;
+                    }
+
+                    &:first-child{
+                        padding-left: 0;
+                        @include mobile-device{
+                             padding-left: $space10;
+                        }
+                       
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                        border-right: 0;
+                    }
+
+                    a{
+                        color: $white;
+                        text-decoration: none;
+
+                        &:hover{
+                            &::before{
+                            background: $white;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-info{
+            text-align: right;
+
+            .social-icon{
+                float: right;
+                li{
+                    display: inline-block;
+                    padding-left: $space10;
+
+                    a{
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+
+            #language-selector{
+                background: transparent;
+                border: 0;
+                color: $white;
+                outline: 0;
+                cursor: pointer;
+                margin-right: $space10;
+            }
+        }
+    }
+
+    .nav-section{
+        background: $white;
+        width: 100%;
+        display: inline-block;
+        @include roundedCorners(10);
+        padding:12px $space20;   
+        
+
+        @include desktop-device{
+           display: flex;
+           align-items: center;
+        }
+        
+        .logo{
+            width: 28%;
+             @include tablet-device{
+                 width: 50%;
+                 float: left;
+             }
+        }
+        .nav-bar-section{
+            width: 58%;
+
+            @include tablet-device{
+                 width: 50%;
+                 float: right;
+                 text-align: right;
+             }
+
+             .navbar{
+                 @include tablet-device{
+                     float: right;
+                 }
+
+                 .navbar-toggler{
+                     border: 0;
+                     padding: 0;
+                     outline: 0;
+                    box-shadow: none;
+                 }
+             }
+
+            ul{
+                li.nav-item{
+                    display: inline-block;
+                    font-size: $font-size-base1;
+                    font-weight: $font-weight-medium;
+                    padding: 0px 29px;
+                    line-height: $line-height-basic;
+
+                    &:first-child{
+                        padding-left: 0;                        
+                    }
+                    &.dropdown{                        
+                        &:hover{
+                            .dropdown-menu{
+                                 @include desktop-device{
+                                    display: block;
+                                 }
+                            }
+                        }
+
+                        .dropdown-menu{
+                            padding: 0;
+
+                            .dropdown-item{
+                                padding: 10px;
+                            }
+                        }
+                    }
+
+                    a.nav-link{
+                        color: $brown;
+                        display: block;
+                        padding: 0;
+
+                        &::before{
+                            background: $brown;
+                        }
+                    }
+                }
+            }
+        }
+        .request-btn{
+            width: 14%;
+        }
+
+    }
+    
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94.263" height="187.752" viewBox="0 0 94.263 187.752">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_10094" data-name="Rectangle 10094" width="94.263" height="95.243" transform="translate(0 94.263) rotate(-90)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_14499" data-name="Group 14499" transform="translate(0 187.752) rotate(-90)" opacity="0.043">
+    <g id="Group_14414" data-name="Group 14414" transform="translate(92.509 0)">
+      <g id="Group_14413" data-name="Group 14413" clip-path="url(#clip-path)">
+        <g id="Group_14412" data-name="Group 14412" transform="translate(-92.223 1.65)">
+          <ellipse id="Ellipse_9545" data-name="Ellipse 9545" cx="92.616" cy="92.616" rx="92.616" ry="92.616" transform="translate(0)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.704"/>
+          <ellipse id="Ellipse_9546" data-name="Ellipse 9546" cx="85.924" cy="85.924" rx="85.924" ry="85.924" transform="translate(6.692 6.692)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.688"/>
+          <ellipse id="Ellipse_9547" data-name="Ellipse 9547" cx="79.232" cy="79.232" rx="79.232" ry="79.232" transform="translate(13.384 13.384)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.672"/>
+          <ellipse id="Ellipse_9548" data-name="Ellipse 9548" cx="72.539" cy="72.54" rx="72.539" ry="72.54" transform="translate(20.076 20.076)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.657"/>
+          <ellipse id="Ellipse_9549" data-name="Ellipse 9549" cx="65.847" cy="65.848" rx="65.847" ry="65.848" transform="translate(26.768 26.768)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.641"/>
+          <ellipse id="Ellipse_9550" data-name="Ellipse 9550" cx="59.155" cy="59.155" rx="59.155" ry="59.155" transform="translate(33.46 33.46)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.625"/>
+          <ellipse id="Ellipse_9551" data-name="Ellipse 9551" cx="52.463" cy="52.463" rx="52.463" ry="52.463" transform="translate(40.153 40.153)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.609"/>
+          <ellipse id="Ellipse_9552" data-name="Ellipse 9552" cx="45.771" cy="45.771" rx="45.771" ry="45.771" transform="translate(138.095 46.555) rotate(89.636)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.593"/>
+          <ellipse id="Ellipse_9553" data-name="Ellipse 9553" cx="39.079" cy="39.079" rx="39.079" ry="39.079" transform="translate(131.598 53.44) rotate(89.858)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.578"/>
+          <ellipse id="Ellipse_9554" data-name="Ellipse 9554" cx="32.387" cy="32.387" rx="32.387" ry="32.387" transform="translate(60.28 60.177) rotate(0.091)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.562"/>
+          <ellipse id="Ellipse_9555" data-name="Ellipse 9555" cx="25.695" cy="25.695" rx="25.695" ry="25.695" transform="translate(67.072 66.771) rotate(0.335)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.546"/>
+          <ellipse id="Ellipse_9556" data-name="Ellipse 9556" cx="19.003" cy="19.003" rx="19.003" ry="19.003" transform="translate(73.81 73.418) rotate(0.592)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.53"/>
+          <ellipse id="Ellipse_9557" data-name="Ellipse 9557" cx="12.311" cy="12.311" rx="12.311" ry="12.311" transform="translate(80.492 80.121) rotate(0.862)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.514"/>
+          <ellipse id="Ellipse_9558" data-name="Ellipse 9558" cx="5.619" cy="5.619" rx="5.619" ry="5.619" transform="translate(87.111 86.886) rotate(1.146)" fill="none" stroke="#434343" stroke-miterlimit="10" stroke-width="0.498"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_4718" data-name="Path 4718" d="M0,92.687c0-.023,0-.047,0-.071A92.616,92.616,0,0,1,92.616,0V92.687Z" transform="translate(0 1.316)" fill="#434343"/>
+  </g>
+</svg>

@@ -1,0 +1,507 @@
+#cogniwide-home{
+    .top-container{
+        background-color:$blue;
+        background-image: url('#{$img-path}/header-bg.png') ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+    }
+    .banner{
+        width: 100%;
+        display: inline-block;
+        margin:$space20 0px;
+
+        .banner-cnt{
+            display: flex;
+            align-items: center;
+
+            .left-cnt{
+                width: 60%;
+                padding-right: $space20;
+                padding-left: $space50;
+
+                h1,
+                h4,
+                p{
+                    color: $white;
+                    margin-bottom: $space15;
+                }
+
+                .btn{
+                    padding: 13px 39px;
+                }
+
+            }
+            
+        }
+
+        .owl-carousel{
+                .owl-nav{
+                    position: absolute;
+                    top: 35%;
+                    width: 100%;
+
+                    
+                    .owl-prev{
+                        span{
+                            width: 28px;
+                            height: 30px;
+                            text-indent: -1000px;
+                            background: url('#{$img-path}/perv-arrow.png') 0 0 no-repeat;
+                            float: left;
+                            opacity: 0.5;
+
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .owl-next{
+                        float: right;
+                        span{
+                            width: 28px;
+                            height: 30px;
+                            text-indent: -1000px;
+                            background: url('#{$img-path}/next-arrow.png') 0 0 no-repeat;
+                            float: left;
+                            opacity: 0.5;
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                .owl-dots{
+                    text-align: center;
+
+                    .owl-dot{
+                        width: 9px;
+                        height: 9px;
+                        background: #FFF;
+                        border-radius: 50%;
+                        opacity: 0.5;
+                        margin: 0px 3px;
+
+                        &.active{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+    }
+
+    //Product Section style
+    .home-product{
+        width: 100%;
+        float: left;
+        position: relative;
+        margin: 50px 0px;
+
+        .shape1{
+            width: 184px;
+            height: 184px;
+            background: url('#{$img-path}/shape1.svg') 0 0 no-repeat;
+            position: absolute;
+            top: 50px;
+            left: -90px;
+        }
+        .shape2{
+            width: 92px;
+            height: 256px;
+            background: url('#{$img-path}/shape2.svg') 0 0 no-repeat;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .shape4{
+            width: 128px;
+            height: 256px;
+            background: url('#{$img-path}/shape4.svg') 0 0 no-repeat;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .shape5{
+            width: 285px;
+            height: 285px;
+            background: url('#{$img-path}/shape5.svg') 0 0 no-repeat;
+            position: absolute;
+            bottom: -40px;
+            left: -100px;
+        }
+        .product-container{
+            position: relative;
+        }
+        .title-blk{
+            text-align: center;
+        }
+        img{
+            max-width: 100%;
+        }
+        .product-blk{
+           width: 100%;
+           margin-bottom: $space20;
+           display: inline-block;
+           background-color:$white; 
+           @include roundedCorners(10);
+           @include outer-shadow(0px, 0px, 3px, 30px, #000000, 0.1);
+           z-index: 99;
+
+           .content{
+               width: 100%;
+               display: inline-block;
+               padding: 20px 30px;
+
+               h3{
+                   border-bottom: $border;
+                   padding-bottom: $space10;
+               }
+               p{
+                   padding: 0;
+                   margin: 0;
+               }
+           }
+        }
+    }
+    //Product Section style
+    //Service Secion Style
+    .home-service{
+         width: 100%;
+        float: left;
+        position: relative;
+        padding: 50px 0px;
+        background-color:$lightBlue;
+        background-image: url('#{$img-path}/service-bg.png') ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+        overflow: hidden;
+
+        .shape7{
+            width: 176px;
+            height: 303px;
+            background: url('#{$img-path}/shape7.svg') 0 0 no-repeat;
+            position: absolute;
+            top: 50px;
+            left: -90px;
+        }
+
+        .title-blk{
+            text-align: center;
+        }
+         img{
+            max-width: 100%;
+        }
+        .service-blk{
+            width: 100%;
+            display: inline-block;
+            margin-bottom: $space20;
+            position: relative;
+
+            .img-blk{
+                 width: 100%;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+           .content{
+                width: 80%;
+                display: inline-block;
+                background: $white;
+                position: absolute;
+                left: 10%;
+                bottom: 0;
+                @include roundedCorners(10);
+                @include outer-shadow(0px, 0px, 3px, 30px, #000000, 0.1);
+                padding: $space20 $space25;
+
+                 &:hover{
+                        a{
+                           &:hover{
+                               &::after{
+                                   -webkit-transform: translateX(10px);
+                                    -moz-transform: translateX(10px);
+                                    -ms-transform: translateX(10px);
+                                    -o-transform: translateX(10px);
+                                    transform: translateX(10px);
+                               }
+                           } 
+                        }
+                    }
+
+
+                h3,
+                h4{
+                    margin: 0;
+
+                    a{
+                        color: $black;
+                    }
+                }
+
+                h4{
+                    a{
+                        position: relative;
+                        display: block;
+                        -webkit-transition: transform 0.3s ease-out;
+                        -moz-transition: transform 0.3s ease-out;
+                        -ms-transition: transform 0.3s ease-out;
+                        -o-transition: transform 0.3s ease-out;
+                        transition: transform 0.3s ease-out;
+                        &::after{
+                            content: '';
+                            width: 21px;
+                            height: 14px;
+                            background: url('#{$img-path}/service-arrow.png') 0 0 no-repeat;
+                            position: absolute;
+                            right: 12px;
+                        }
+                    }
+                   
+                }
+
+           }
+        }
+    }
+    //Service Secion Style
+    //Digital Section
+    .home-digital{
+        width: 100%;
+        float: left;
+        position: relative;
+        margin: 50px 0px;
+
+        h2{
+            line-height: 52px;
+        }
+
+        .title-blk{
+            text-align: left;
+            margin-bottom: 42px;
+        }
+         img{
+            max-width: 100%;
+        }
+
+        .digital-block{
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 20px;
+            position: relative;
+
+            .content{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 40px 30px 20px 40px;
+
+                h3{
+                    color: $white;
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+                p{
+                    color: $white;
+                }
+            }
+            .arrow-block{
+                position: absolute;
+                bottom: 20px;
+                left: 40px;
+                -webkit-transition: transform 0.3s ease-out;
+                -moz-transition: transform 0.3s ease-out;
+                -ms-transition: transform 0.3s ease-out;
+                -o-transition: transform 0.3s ease-out;
+                transition: transform 0.3s ease-out;
+
+            }
+
+            &:hover{
+                .arrow-block{
+                    -webkit-transform: translateX(10px);
+                        -moz-transform: translateX(10px);
+                        -ms-transform: translateX(10px);
+                        -o-transform: translateX(10px);
+                        transform: translateX(10px);
+                }
+                    
+            }
+        }
+        
+    }
+    //Digital Section
+    //Why cogniwide css
+    .home-why{
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 50px 0px 0px;
+        background-color:$greylight;
+        background-image: url('#{$img-path}/why-bg.png') ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+        margin-bottom: 30px;
+        
+        img{
+            max-width: 100%;
+        }
+        .row{
+            align-items: center;
+        }
+
+        .why-container{
+            position: relative;
+
+            .shape1{
+                width: 184px;
+                height: 184px;
+                background: url('#{$img-path}/shape1.svg') 0 0 no-repeat;
+                position: absolute;
+                bottom: 30px;
+                left: 90px;
+            }
+        }
+    }
+    //Why Cogniwide Css
+
+    //Value cogniwide css
+    .home-value{
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 100px 0px 50px;
+        background-color:$white;
+        background-image: url('#{$img-path}/value-bg.png') ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+        
+        img{
+            max-width: 100%;
+        }
+
+        .value-circle{
+            width: 435px;
+            height: 435px;
+            @include roundedCircle(50);
+            border: 2px dashed $lightGrey;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: $white;
+
+            .content{
+                text-align: center;
+                width: 370px;
+
+                h2{
+                    line-height: 52px;
+                }
+            }
+            h6{
+                margin-bottom: 5px;
+            }
+            .ico-blk{
+                    width: 86px;
+                    height: 86px;                    
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+            .value-ico1{
+                position: absolute;
+                top: -71px;
+
+                .ico-blk{
+                    background: #FDAB00;
+                    margin: 0 auto;
+                }
+
+            }
+            .value-ico2{
+                position: absolute;
+                top: 88px;
+                right: -160px;
+
+                h6{
+                    display: inline-block;
+                    padding-top: $space20;
+                    padding-left: $space10;
+                }
+
+                .ico-blk{
+                    background: #4874AA;
+                    margin: 0 auto;
+                    float: left;
+                }
+
+            }
+
+            .value-ico3{
+                position: absolute;
+                bottom: 40px;
+                right: -160px;
+
+                h6{
+                    display: inline-block;
+                    padding-top: $space20;
+                    padding-left: $space10;
+                }
+
+                .ico-blk{
+                    background: #3B9A3D;
+                    margin: 0 auto;
+                    float: left;
+                }
+
+            }
+            .value-ico4{
+                position: absolute;
+                bottom: 40px;
+                left: -186px;
+
+                h6{
+                    display: inline-block;
+                    padding-top: $space30;
+                    padding-right: $space10;
+                }
+
+                .ico-blk{
+                    background: #D81F74;
+                    margin: 0 auto;
+                    float: right;
+                }
+
+            }
+
+            .value-ico5{
+                position: absolute;
+                top: 88px;
+                left: -175px;
+
+                h6{
+                    display: inline-block;
+                    padding-top: $space20;
+                    padding-right: $space10;
+                    text-align: right;
+                }
+
+                .ico-blk{
+                    background: #F05813;
+                    margin: 0 auto;
+                    float: right;
+                }
+
+            }
+
+        }
+    }  //Value cogniwide css
+
+}

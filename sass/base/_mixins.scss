@@ -86,12 +86,50 @@
 
 // example @include breakpoint(940){ width:80%; }
 
-@mixin breakpoint($size) {
-	@media only screen and (max-width : $size + px) { @content; }
+/* Media Queries */ 
+$mq-mobile-portrait		: 320px !default;
+$mq-mobile-landscape	: 480px !default;
+$mq-tablet-portrait		: 767px !default;
+$mq-tablet-landscape	: 1024px !default;
+$mq-desktop				: 1382px !default;
+
+
+@mixin mobile-device {
+	@media screen and (max-width : $mq-tablet-portrait) {
+		@content;
+	}
 }
 
-@mixin min-breakpoint($size) {
-	@media only screen and (min-width : $size + px) { @content; }
+@mixin tablet-device {
+	@media  screen and (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+
+@mixin desktop-device {
+	@media  screen and (min-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+
+
+// -----------------------------------------
+
+	// Button
+	
+// -------------------------------------------
+
+@mixin customButton($bg) {
+  background: $bg;  
+  border: 2px solid $bg;
+  &:hover {
+    background: $bg;
+  }
+  &:active {
+    background:$bg;
+  } 
+  
+  
 }
 
 
@@ -108,6 +146,11 @@
   	-webkit-border-radius: $size + px;
      	-moz-border-radius: $size + px;
           	border-radius: $size + px;  
+}
+@mixin roundedCircle($size){
+  	-webkit-border-radius: ($size)*1%;
+     	-moz-border-radius: ($size)*1%;
+          	border-radius: ($size)*1%;  
 }
 
 // Rounded Corners Top Only
@@ -261,6 +304,12 @@
  	-moz-box-shadow:    inset $hoff $voff $blur $color;
     -webkit-box-shadow: inset $hoff $voff $blur $color;
     box-shadow:         inset $hoff $voff $blur $color;
+}
+
+@mixin outer-shadow($hoff: false, $voff: false, $blur: false, $spread: false, $color: false, $opacity:false) {
+ 	-moz-box-shadow:    $hoff $voff $spread $blur rgba($color, $opacity);
+    -webkit-box-shadow: $hoff $voff $spread $blur rgba($color, $opacity);
+    box-shadow:         $hoff $voff $spread $blur rgba($color, $opacity);
 }
 
 // -----------------------------------------

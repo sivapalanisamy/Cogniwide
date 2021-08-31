@@ -1,28 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,600;1,700&display=swap');
 
 // -----------------------------------------
 	// Layout Sizes
 // -----------------------------------------
-$maxWidth: 1250;
+$maxWidth: 1250px;
 
 // -----------------------------------------
 	// color variables
 // -------------------------------------------
-// greens
-$darkGreen: #65952d;
-$lightGreen: #dbedcd;
+
+$textColor: #333333;
+$black: #000000;
+$white: #FFFFFF;
+$darkGreen: #3B9A3D;
+$lightGreen: #349236;
+$orange: #FDAB00;
+$brown: #51493B;
 
 // blues
-$blue: #4dbdcb;
+$blue : #1976D2;
 $darkBlue: #568387;
-$lightBlue: #aad8dd;
+$lightBlue: #8FECDD;
 
 // greys
-$grey: #696969;
+$grey: #666666;
 $lightGrey: #cccccc;
 $lightGreyBG: #f9f9f9;
 $darkGrey: #333333;
 $mediumGrey: #8f9499;
+$greylight: #F3F3F3;
 
 // -----------------------------------------
 	// Fonts
@@ -31,11 +36,43 @@ $webfont: 'webfont', Helvetica, Arial, sans-serif;
 $webfont_bold: 'webfont_bold', Helvetica, Arial, sans-serif;
 $webfont_light: 'webfont_light', Helvetica, Arial, sans-serif;
 $helvetica: Helvetica, Arial, sans-serif;
-$montserrat:'Montserrat';
+$font-family-base:'Montserrat';
 
 // -----------------------------------------
 	// Font Sizes
 // -------------------------------------------
-$regularSize:16;
-$productHeading:28;
-$productBannerHeading:25;
+$font-size-base :14px;
+$font-size-xs :11px;
+$font-size-base1 :16px;
+
+$font-size-h1 :36px;
+$font-size-h2 :24px;
+$font-size-h3 :20px;
+$font-size-h4 :18px;
+$font-size-h5 :16px;
+
+//Font Weights
+$font-weight-normal    : 400;
+$font-weight-medium    : 500;
+$font-weight-semi      : 600;
+$font-weight-bold      : 700;
+
+//Image Path
+$img-path                 : "../assets/images"; // Usage: background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
+
+//lineheight
+$baseline:24px;
+$line-height-basic: 18px;
+$line-height-headings: 36px;
+
+$hr-color: $lightGrey;
+
+$space10 : 10px;
+$space15 : 15px;
+$space20 : 20px;
+$space25 : 25px;
+$space30 : 30px;
+$space50 : 50px;
+
+//border
+$border: 1px solid #cccccc;
