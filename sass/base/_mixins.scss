@@ -105,6 +105,11 @@ $mq-desktop				: 1382px !default;
 		@content;
 	}
 }
+@mixin tablet-min-device {
+	@media  screen and (min-width : $mq-tablet-portrait) {
+		@content;
+	}
+}
 
 @mixin desktop-device {
 	@media  screen and (min-width : $mq-tablet-landscape) {

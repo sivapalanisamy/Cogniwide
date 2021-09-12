@@ -1,0 +1,234 @@
+footer{
+    width: 100%;
+    display: inline-block;
+    background: #222222;
+    position: relative;
+
+    .top-footer{
+        position: relative;
+        padding-top:60px;
+        padding-bottom: 60px;
+        display: inline-block;
+        width: 100%;
+
+         @include mobile-device{
+             padding-bottom: 20px;
+         }
+
+        .logo-bg-shape{
+            width: 321px;
+            height: 107px;
+            background: url('#{$img-path}/logo-bg.svg') 0 0 no-repeat;
+            position: absolute;
+            top: 0px;
+            left: -100px;
+            z-index: 1;
+        }
+
+        .footer-info{
+            width: 350px;
+            float: left;
+            z-index: 999;
+            margin-right: 65px;
+            position: relative;
+
+            @include mobile-device{
+                width: 100%;
+                margin: 0px 0px 30px 0px;
+            }
+
+            .logo{
+                float: left;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            p{
+                color: #ADADAD;
+            }
+
+            .social{
+                float: left;
+                width: 100%;
+
+                li{
+                    display: inline-block;
+                    margin-right: 20px;
+                    opacity: 0.5;
+                    
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .footer-nav{
+            width: 200px;
+            float: left;
+            margin-right: 40px;
+
+            @include mobile-device{
+                width: 180px;
+                margin-right: 25px;
+
+                &.last{
+                    margin-right: 0;
+                }
+            }
+
+            h5{
+                font-size: 18px;
+                margin-bottom: 20px;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #656565;
+                color: $white;
+            }
+
+            ul{
+                li{
+                    font-size: 14px;
+                    display: block;
+                    padding: 0px 0px 15px 0px;
+                    padding-left: 30px;
+                    position: relative;
+
+                    &::after{
+                            content: ' ';
+                           background: url('#{$img-path}/nav-arrow.png') 0 0 no-repeat;
+                           width: 13px;
+                           height: 13px;
+                           position: absolute;
+                           left: 0;
+                           top: 0;
+                           transition: transform .5s ease;
+
+                        }
+
+                        &:hover{
+                            &::after{
+                                -webkit-transform: rotate(44deg);
+                                -moz-transform: rotate(44deg);
+                                -ms-transform: rotate(44deg);
+                                -o-transform: rotate(44deg);
+                                transform: rotate(44deg);
+                            }
+                        }
+
+                    a{
+                        
+                        color: #ADADAD;                        
+                        line-height: 16px;                       
+                        
+
+                        &:hover{
+                            color:$white;;
+                            &::before{
+                                background: #ADADAD;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .footer-address{
+            width: 330px;
+            float: right;
+
+            @include mobile-device{
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            h5{
+                font-size: 18px;
+                margin-bottom: 20px;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #656565;
+                color: $white;
+                max-width: 200px;  
+                
+                 @include mobile-device{
+                     max-width: 100%;
+                 }
+            }
+            h6{
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                color: #ADADAD;
+            }
+            p{
+               color: #ADADAD; 
+            }
+        }
+    }
+
+    .bottom-footer{
+        width: 100%;
+        display: inline-block;
+        padding: 35px 0px;
+        border-top: 1px #656565 solid ;
+
+        .footer-row{
+            display: flex;
+            align-items: center;
+            color: #FFF;
+            width: 100%;
+
+            @include mobile-device{
+                display: inline-block;
+            }
+
+            .subscribe-blk{
+                width: 60%;
+                display: flex;
+                align-items: center;
+
+                @include mobile-device{
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                label{
+                    margin-right: 20px;
+
+                    @include mobile-device{
+                        display: block;
+                        margin: 0px 0px 15px 0px;
+                    }
+                    
+                }
+                .formgroup{
+                    display: inline-block;
+                    position:relative;
+                    width: 100%;
+                    max-width: 430px;
+
+                    .form-control{
+                        max-width: 330px;
+                        float: left;
+                        height: 37px;
+                    }
+                    .btn{
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+            .copyrights{
+                width: 40%;
+                text-align: right;
+                color: #ADADAD;
+
+                @include mobile-device{
+                    width: 100%;
+                    text-align: left;
+                    margin-top: 30px;
+                }
+
+            }
+        }
+    }
+}

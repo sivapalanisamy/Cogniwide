@@ -85,3 +85,18 @@
     margin-left:0;
   }
 }*/
+.hidden-xs{
+  display: block;
+}
+.visible-xs{
+  display: none !important;
+}
+
+@include mobile-device{
+  .hidden-xs{
+    display: none !important;
+  }
+  .visible-xs{
+    display: block !important;
+  }
+}

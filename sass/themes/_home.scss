@@ -15,10 +15,20 @@
             display: flex;
             align-items: center;
 
+            @include mobile-device{
+                display: inline-block;
+            }
+
             .left-cnt{
                 width: 60%;
                 padding-right: $space20;
                 padding-left: $space50;
+
+                @include mobile-device{
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                }
 
                 h1,
                 h4,
@@ -69,6 +79,10 @@
                                 opacity: 1;
                             }
                         }
+                    }
+
+                    @include mobile-device{
+                        display: none;
                     }
                 }
 
@@ -376,28 +390,45 @@
         background-color:$white;
         background-image: url('#{$img-path}/value-bg.png') ;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-position: top center;
+
+        @include mobile-device{
+             padding-top: 30px;
+         }
         
         img{
             max-width: 100%;
         }
 
         .value-circle{
-            width: 435px;
-            height: 435px;
-            @include roundedCircle(50);
+            width: 100%;
+            @include roundedCorners(10);
             border: 2px dashed $lightGrey;
             margin: 0 auto;
-            display: flex;
+            display: inline-block;
             align-items: center;
             justify-content: center;
             position: relative;
             background: $white;
 
+            @include tablet-min-device{
+                     width: 435px;
+                    height: 435px;
+                    @include roundedCircle(50);
+                    display: flex;
+            }
+            @include mobile-device{
+                padding: 15px;
+            }
+
+
             .content{
                 text-align: center;
-                width: 370px;
+                 width: 100%;
+
+                @include tablet-min-device{
+                     width: 370px;
+                }
 
                 h2{
                     line-height: 52px;
@@ -415,9 +446,30 @@
                     justify-content: center;
                     
                 }
+            .value-position{
+                
+                @include tablet-min-device{
+                    position: absolute;
+                }
+                 @include mobile-device{
+                    width: 100%;
+                    text-align: center;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                }
+
+                h6{
+                    @include mobile-device{
+                        padding: $space20 0px  $space20 0px;
+                        text-align: center;
+                     }
+                }
+            }
             .value-ico1{
-                position: absolute;
-                top: -71px;
+                
+                @include tablet-min-device{
+                    top: -71px;
+                }
 
                 .ico-blk{
                     background: #FDAB00;
@@ -426,9 +478,11 @@
 
             }
             .value-ico2{
-                position: absolute;
-                top: 88px;
-                right: -160px;
+                
+                @include tablet-min-device{
+                    top: 88px;
+                    right: -160px;
+                }
 
                 h6{
                     display: inline-block;
@@ -439,15 +493,20 @@
                 .ico-blk{
                     background: #4874AA;
                     margin: 0 auto;
-                    float: left;
+                    
+                    @include tablet-min-device{
+                        float: left;
+                    }
                 }
 
             }
 
             .value-ico3{
-                position: absolute;
-                bottom: 40px;
-                right: -160px;
+                
+                @include tablet-min-device{
+                    bottom: 40px;
+                    right: -160px;
+                }
 
                 h6{
                     display: inline-block;
@@ -458,14 +517,19 @@
                 .ico-blk{
                     background: #3B9A3D;
                     margin: 0 auto;
-                    float: left;
+                    
+                     @include tablet-min-device{
+                        float: left;
+                    }
                 }
 
             }
             .value-ico4{
-                position: absolute;
-                bottom: 40px;
-                left: -186px;
+                
+                @include tablet-min-device{
+                    bottom: 40px;
+                    left: -186px;
+                }
 
                 h6{
                     display: inline-block;
@@ -476,32 +540,435 @@
                 .ico-blk{
                     background: #D81F74;
                     margin: 0 auto;
-                    float: right;
+                    
+                     @include tablet-min-device{
+                        float: right;
+                    }
                 }
 
             }
 
             .value-ico5{
-                position: absolute;
-                top: 88px;
-                left: -175px;
+                
+                @include tablet-min-device{
+                    top: 88px;
+                    left: -175px;
+                }
 
                 h6{
                     display: inline-block;
                     padding-top: $space20;
                     padding-right: $space10;
                     text-align: right;
+
+                     @include mobile-device{
+                        padding: $space20 0px 0px 0px;
+                        text-align: center;
+                     }
                 }
 
                 .ico-blk{
                     background: #F05813;
                     margin: 0 auto;
-                    float: right;
+                    
+                     @include tablet-min-device{
+                        float: right;
+                    }
                 }
 
             }
 
         }
+
+        .project-count{
+            width: 100%;
+            display: inline-block;
+            margin: 30px 0px 50px;
+            background: #FCFBFC;
+            text-align: center;
+            padding: $space10 0px $space30 0;
+            @include roundedCorners(10);
+
+             @include tablet-min-device{
+               margin: 108px 0px 50px;
+            }
+
+            .count{
+                font-size: 64px;
+                font-weight: 600;
+
+                &.orange{
+                    color: #FDAB00;
+                }
+                &.green{
+                    color: #3B9A3D;
+                }
+                &.blue{
+                    color: #4874AA;
+                }
+                &.pink{
+                    color: #D81F74;
+                }
+            }
+            h6{
+                margin: 0;
+            }
+        }
     }  //Value cogniwide css
+
+    .home-partners{
+        width: 100%;
+        float: left;
+        position: relative;
+        background-color:$white;
+        
+
+
+        @include tablet-min-device{
+            background-image: url('#{$img-path}/patner-bg.png') ;
+            background-repeat: no-repeat;
+            background-position: top center;
+            padding: 55px 0px 50px;
+        }
+
+        
+        
+        img{
+            max-width: 100%;
+        }
+
+        h1{
+            font-weight: bold;
+            line-height: 52px;            
+            text-align: center;
+
+             @include tablet-min-device{
+                color: $white;
+             }
+        }
+
+        .title-blk{
+            text-align: left;
+        }
+
+        #cogni-tab{
+            .nav-tabs{
+                border: 0;
+                justify-content: center;
+
+                .nav-link{
+                    color:$lightGrey;
+                    font-size: 22px;
+                    font-weight: 500;
+                    border-radius: 0;
+                    margin: 0;
+                    border: 0;
+                    position: relative;
+
+                    &.active{
+                        border-radius: 0;
+                        background: transparent;
+                        color: $darkGrey;
+                        border: 0;
+
+                        @include tablet-min-device{
+                            color: $white;
+                        }
+
+                        &::after{
+                            content: '';
+                            height: 5px;
+                            background: #1976D2;
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+                    }
+
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }
+
+            .tab-content{
+                margin-top: 50px;
+                .tab-container{
+                    width: 100%;
+                    max-width: 1000px;
+                    margin: 0 auto;
+
+                    .logo-row{
+                        width: 100%;
+                        display: inline-block;
+                        margin-bottom: $space20;
+                        align-items: center;
+
+                         @include tablet-min-device{
+                            display: flex;
+                        }
+
+                        .title{
+                            width: 100%;
+                            float: left;
+                            @include roundedCorners(10);
+                            margin-bottom: 20px;                          
+                            text-align: center;
+                            padding: 10px 10px;
+                            font-size: $font-size-base1;
+                            font-weight: 500;
+                            color: $white;
+
+                            @include tablet-min-device{
+                                width: 106px;
+                                @include roundedLeft(10);
+                                margin: 0;
+                            }
+                        }
+
+                        .logo-col{
+                            width: 48%;
+                            height: 90px;
+                            @include roundedCorners(10);
+                            border: 1px solid $lightGrey;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            float: left;
+                            margin: 0px 6px 20px 0px;
+
+                            @include tablet-min-device{
+                                width: 192px;
+                                margin: 0;
+                                border: 1px solid $white;
+                                 display: flex;
+                            }
+                        }
+                        .separator{
+                            width: 20px;
+                            height: 4px;                            
+                        }
+
+                        &.blue-row{
+                            .title{
+                                background: #2C97DF;
+                            }
+                            .separator{
+                                background: #2C97DF;
+                            }
+                        }
+                        &.green-row{
+                            .title{
+                                background: #18BC9C;
+                            }
+                            .separator{
+                                background: #18BC9C;
+                            }
+                        }
+                        &.red-row{
+                            .title{
+                                background: #E94B3D;
+                            }
+                            .separator{
+                                background: #E94B3D;
+                            }
+                        }
+                        &.yellow-row{
+                            .title{
+                                background: #FDAB00;
+                            }
+                            .separator{
+                                background: #FDAB00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }//Patners cogniwide css
+
+    .home-testimonials{
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 50px 0px 50px;
+        background-color:$white;
+        background-repeat: no-repeat;
+        background-position: top center;
+        
+        img{
+            max-width: 100%;
+        }
+
+        h2{            
+            text-align: center;
+        }
+
+        .title-blk{
+            text-align: left;
+        }
+
+        .testimonials-blk{
+            width: 100%;
+            max-width: 1250px;
+            display: inline-block;
+            padding: 50px 0px 50px 10px;
+            overflow: hidden;
+
+            .owl-stage-outer{
+                overflow: visible;
+            }
+            .owl-nav{
+                display: none;
+            }
+
+            .owl-dots{
+                    text-align: center;
+                    margin-top: 30px;
+
+                    .owl-dot{
+                        width: 9px;
+                        height: 9px;
+                        background: #96958E;
+                        border-radius: 50%;
+                        opacity: 1;
+                        margin: 0px 3px;
+
+                        &.active{
+                            background:$blue;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+            .testimonials-item{
+                width: 97%;
+                padding: 40px;
+                margin-right: 30px;
+                display: inline-block;
+                background-color:$white; 
+                @include roundedCorners(10);
+                @include outer-shadow(0px, 0px, 3px, 6px, #000000, 0.1);
+                z-index: 99;
+                position: relative;
+
+                @include tablet-min-device{
+                   width: 590px;
+                    padding: 40px;
+                }
+
+                .quotation{
+                    position: absolute;
+                    top: -20px;
+                    right: 10px;
+                }
+
+                .content{
+                    width: 100%;
+                    display: inline-block;
+                    margin-bottom: 20px;
+
+                    p{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .testimonial-profile{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    border-top: $border;
+                    padding-top: 10px;
+
+                    .profile-img{
+                        width: 70px;
+                        margin-right: 20px;
+                    }
+                    .profile-info{
+
+                        h6{
+                            margin-bottom: 0;
+                            color: #666666;
+                            font-weight: 500;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: #999999;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }//Patners cogniwide css
+
+
+    .home-client{
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 0px 0px 20px;
+        border-top: $border;
+        background-color:$white;
+
+        .client-blk{
+            width: 100%;
+            max-width: 1250px;
+            display: inline-block;
+            padding: 30px 0px 0px 10px;
+            overflow: hidden;
+
+            .client-item{
+                display: inline-block;
+            }
+
+            .owl-dots{
+                display: none;
+            }
+            .owl-nav{
+                    position: absolute;
+                    top: 52%;
+                    width: 100%;
+
+                    @include mobile-device{
+                        display: none;
+                    }
+
+                    
+                    .owl-prev{
+                        span{
+                            width: 28px;
+                            height: 30px;
+                            text-indent: -1000px;
+                            background: url('#{$img-path}/client-left.png') 0 0 no-repeat;
+                            float: left;
+                            opacity: 0.5;
+
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .owl-next{
+                        float: right;
+                        margin-right: 20px;
+                        span{
+                            width: 28px;
+                            height: 30px;
+                            text-indent: -1000px;
+                            background: url('#{$img-path}/client-right.png') 0 0 no-repeat;
+                            float: left;
+                            opacity: 0.5;
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+        }
+    }
 
 }
